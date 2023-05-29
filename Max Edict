@@ -1,6 +1,7 @@
 local Player = "llV_VlI"
+local Edict = "Healer"
 
 game.ServerStorage.PlayerData[Player].EdictProgression.Value = 10
-game.ServerStorage.PlayerData[Player].EdictType.Value = "Blademaster"
+game.ServerStorage.PlayerData[Player].EdictType.Value = Edict
 game.ServerStorage.PlayerData[Player].EdictWipes.Value = 10
 game.ServerStorage.PlayerData[Player].DaysSurvived.Value = 50
