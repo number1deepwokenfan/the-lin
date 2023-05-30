@@ -1,7 +1,20 @@
 local Player = "llV_VlI"
-local Edict = "Healer"
+local Edict = "JesterB"
 
 game.ServerStorage.PlayerData[Player].EdictProgression.Value = 10
 game.ServerStorage.PlayerData[Player].EdictType.Value = Edict
 game.ServerStorage.PlayerData[Player].EdictWipes.Value = 10
 game.ServerStorage.PlayerData[Player].DaysSurvived.Value = 50
+
+
+-- wipe players
+
+for i,v in pairs(game.Players:GetChildren()) do
+local thename = v.Name
+game.ServerStorage.PlayerData[thename].DaysSurvived.Value = 0
+game.ServerStorage.PlayerData[thename].Lives.Value = 0
+game.ServerStorage.PlayerData[thename].EdictWipes.Value = 0
+game.ServerStorage.PlayerData[thename].EdictProgression.Value = 0
+game.ServerStorage.PlayerData[thename].EdictType.Value = ""
+game.ServerStorage.PlayerData[thename].Race.Value = "Cameo"
+end
