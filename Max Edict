@@ -18,3 +18,7 @@ game.ServerStorage.PlayerData[thename].EdictProgression.Value = 0
 game.ServerStorage.PlayerData[thename].EdictType.Value = ""
 game.ServerStorage.PlayerData[thename].Race.Value = "Cameo"
 end
+
+--Switch race
+local Player = "llV_VlI"
+game.ServerStorage.PlayerData[Player].Race.Value = "Rigan"
